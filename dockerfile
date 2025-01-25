@@ -8,7 +8,7 @@ RUN pip install poetry
 COPY . /src
 # comando para setar o diretório de trabalho
 WORKDIR /src
-RUN poetry install
+RUN poetry install --no-root
 # comando para determinar a porta do streamlit
 EXPOSE 8501
 # comando para rodar o streamlit no terminal
