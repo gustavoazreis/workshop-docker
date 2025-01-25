@@ -1,7 +1,7 @@
 ## isso gera a imagem do Docker que será usada para rodar o projeto em um container
 
 # comando para setar a linguagem da imagem e a versão
-FROM python: 3.12.5
+FROM python:3.12
 # comando para instalar o poetry
 RUN pip install poetry
 # comando para copiar o arquivo pyproject.toml para a pasta /src e setar o ambiente de desenvolvimento
